@@ -1,0 +1,19 @@
+What is Data Science?
+
+Data Science involves analyzing and manipulating data—whether text, image, audio, or video—to predict future use cases and provide reasonable suggestions through recommendation systems.
+
+Data Science vs AI vs ML
+
+Data Science: Encompasses Mathematics, Statistics, Visualization, and Exploratory Data Analysis (EDA). These form the foundational elements for both Artificial Intelligence (AI) and Machine Learning (ML).
+
+Artificial Intelligence (AI)**: Involves training systems to make their own decisions based on data. It essentially gives a machine a "brain" to autonomously make decisions. Examples include Amazon Echo and Google Assistant.
+
+Machine Learning (ML)**: A subset of AI focused on making recommendations based on provided data or past occurrences. Examples include movie recommendations on Netflix and product suggestions on Amazon.
+
+Hierarchical Relationship
+
+AI (Artificial Intelligence): The broadest field, encompassing all forms of intelligence exhibited by machines.
+ML (Machine Learning): A subset of AI, dedicated to developing algorithms that enable machines to learn from and make predictions based on data.
+Deep Learning: A subset of ML, utilizing neural networks to solve complex problems.
+
+Note: The hierarchy can be visualized as AI > ML > Deep Learning, with each subset focusing on more specific aspects of machine intelligence. Deep Learning leverages neural networks to address intricate issues, making it a powerful tool within the broader AI and ML domains.
