@@ -1,0 +1,17 @@
+Excel Macros
+Macros in Excel: Sequences of instructions that automate repetitive tasks.
+Recording a Macro: Actions can be recorded to capture a series of steps in Excel.
+Running a Macro: Once recorded, macros can be executed to repeat the captured actions.
+Macros Security: Security settings for enabling or disabling macros in Excel.
+VBA (Visual Basic for Applications)
+VBA: A programming language integrated into Microsoft Office applications.
+Capabilities: Allows users to write custom code to automate tasks, create user-defined functions, and control Excel.
+VBA Concepts
+VBA Editor: The integrated development environment (IDE) where you write and edit VBA code.
+Modules: Containers for VBA code within a workbook.
+Procedures: Subroutines (Sub) and functions (Function) that perform specific tasks.
+Macro vs. VBA
+Macro: A piece of code.
+Language: Macros are written in a programming language called VBA.
+Application: VBA is used in Excel, Word, PowerPoint, and other Office applications.
+Editor: VBA includes an editor within Excel and Word for writing and managing macros.
