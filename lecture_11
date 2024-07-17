@@ -1,0 +1,25 @@
+
+Pivot Table
+Purpose: Allows summarizing, analyzing, exploring, and presenting data efficiently.
+Automatic Functions: Automatically sorts data, counts the total number of values, and calculates totals for specific sets of values.
+Display: Helps in displaying summarized data in a new table.
+Operations
+Summarizing Data: Sum, average, count, minimum, etc.
+Filtering Data: Filter by data, product, region, etc.
+Grouping Data: Group by dates (monthly, quarterly), product, region.
+Calculating Percentages: Percentage of total, percentage change.
+Pivot Chart
+Definition: An extension of a pivot table that provides a graphical representation of the data summarized in the pivot table.
+Features: Allows for dynamic data visualization.
+Operations
+Changing Chart Types: Column, bar, line, etc.
+Customizing Chart Elements: Titles, legend, data labels, colors.
+Drilling Down Data: Interactively explore data points in detail.
+Power Query
+Purpose: Discover, connect, combine, and refine data from various sources.
+Functionality: Provides an easy way to import, clean, and transform data before analyzing it in Excel.
+Operations
+Merging Queries: Combine data from different tables or sources.
+Appending Queries: Stack data from similar tables.
+Unpivoting Columns: Transform columns into rows for better analysis.
+Creating Calculated Columns: Add custom calculations and transformations.
