@@ -1,0 +1,120 @@
+Python Programming Language
+
+Introduction
+
+Invented by: Guido van Rossum in 1991
+Uses of Python:
+Web development
+Software development
+Mathematics
+System scripting
+Data science
+Why Python?
+
+Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+Python automatically identifies the types of variables.
+Variables & Data Types
+
+A variable is the name given to a memory location in a program.
+Data Types in Python
+
+Integer
+
+Holds numerical values, e.g., 1, 2, -1
+Inbuilt functions and operations:
+num = 10
+print(abs(num))         # Absolute value
+ Output: 10
+print(bin(num))         # Binary representation
+ Output: 0b1010
+print(hex(num))         # Hexadecimal representation
+ Output: 0xa
+print(pow(num, 2))      # Power function
+ Output: 100
+print(divmod(num, 3))   # Quotient & Remainder
+ Output: (3, 1)
+ Floating Point Number
+
+Takes decimal numbers, e.g., 1.1, 24.5
+Inbuilt functions and operations:
+price = 99.99
+print(round(price))      # Round
+Output: 100
+Typecasting:
+print(int(price))        # Convert to integer
+ Output: 99
+print(float("1234"))     # Convert string to float
+ Output: 1234.0
+ String
+
+Example: greeting = "hello world!"
+Inbuilt functions and operations
+greeting = "hello world!"
+print(greeting.lower())      # Convert to lower
+print(greeting.upper())      # Convert to upper
+print(greeting.replace("world", "python"))  # Replace substring
+print(greeting.split())      # Split string into a list
+print(greeting.find("world"))  # Find substring
+print(len(greeting))         # Length of string
+List
+
+Mutable (can be changed)
+Example: fruit = ["apples", "banana", "cherry"]
+Inbuilt functions and operations:
+fruit = ["apples", "banana", "cherry"]
+fruit.append("orange")   # Add at end of the list
+fruit.extend(["mango", "grape"])  # Add at end of the list
+fruit.remove("banana")   # Remove an element
+fruit.pop()              # Remove the last element
+fruit.sort()             # Sort the list
+print(len(fruit))        # Length of list
+print(fruit.index("apples"))  # Find index of a value
+Tuple
+
+Immutable (cannot be changed)
+Example: coordinates = (10.0, 20.0)
+Inbuilt functions and operations
+coordinates = (10.0, 20.0)
+print(coordinates.count(10.0))  # Count occurrences
+print(coordinates.index(20.0))  # Find index of value
+print(len(coordinates))         # Length of the tuple
+
+ Changing a tuple by converting it to a list
+li = list(coordinates)
+print(li)  # Output: [10.0, 20.0]
+Dictionary
+
+Collection of key-value pairs
+Example: person = {"name": "Pranav"}
+Inbuilt functions and operations
+person = {"name": "Pranav"}
+print(person.keys())    # Get all keys
+print(person.values())  # Get all values
+print(person.items())   # Get all key-value pairs
+person.update({"age": 25})  # Update dictionary with another dictionary
+person.pop("name")      # Remove a value
+print(len(person))      # Length of the dictionary
+Set
+
+Collection of non-repetitive elements
+Example: se = {1, 2, 3, 4}
+Inbuilt functions and operations
+se = {1, 2, 3, 4}
+se.add(5)              # Add a value
+print(len(se))         # Length of the set
+Conditional Statements
+
+if, elif, else
+Example:
+a = 200
+b = 33
+
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+ Output: a is greater than b
+
+
