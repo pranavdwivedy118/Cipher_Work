@@ -1,0 +1,133 @@
+
+
+!pip install matplotlib seaborn
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+# Data for line plot
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
+
+# Create a line plot with Matplotlib
+plt.plot(x, y, linestyle='--', color='#3498db', linewidth=2, marker='o', mec='b', ms=8)
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Modified Line Plot')
+plt.grid(True)
+plt.show()
+
+# Data for multiple line plots
+y1 = np.array([3, 8, 1, 10])
+y2 = np.array([6, 2, 7, 11])
+plt.plot(y1, label='y1')
+plt.plot(y2, label='y2')
+plt.legend()
+plt.title('Multiple Line Plots')
+plt.show()
+
+# Create a scatter plot with Matplotlib
+plt.scatter(x, y, color='g', marker='D')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Modified Scatter Plot')
+plt.show()
+
+"""Creating a simple bar plot with Matplotlib"""
+
+# Data for bar plot
+products = ['PC', 'TV', 'Ref', 'Micro']
+sales = [4, 7, 1, 8]
+
+# Creating a bar plot
+plt.bar(products, sales, color='purple')
+plt.xlabel('Products')
+plt.ylabel('Sales')
+plt.title('Simple Bar Plot')
+plt.show()
+
+"""Creating a simple histogram with Matplotlib"""
+
+# Data for histogram
+data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
+
+# Creating a histogram
+plt.hist(data, bins=5, color='skyblue', edgecolor='black')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.title('Modified Histogram')
+plt.show()
+
+"""Creating subplots with Matplotlib"""
+
+# Data for subplots
+x = [1, 2, 3, 4, 5]
+y1 = [2, 3, 5, 7, 11]
+y2 = [1, 4, 6, 8, 10]
+
+# Creating subplots
+fig, axs = plt.subplots(2, figsize=(8, 6))
+
+axs[0].plot(x, y1, color='red')
+axs[0].set_title('First Plot')
+axs[1].plot(x, y2, color='blue')
+axs[1].set_title('Second Plot')
+
+plt.tight_layout()
+plt.show()
+
+"""Adding annotations with Matplotlib"""
+
+# Data for plot with annotations
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
+
+# Creating a plot with annotations
+plt.plot(x, y, color='orange')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Plot with Annotations')
+plt.annotate('Peak', xy=(5, 11), xytext=(4, 9),
+             arrowprops=dict(facecolor='black', shrink=0.05))
+plt.show()
+
+"""Create a simple line plot with Seaborn"""
+
+# Creating a line plot with Seaborn
+sns.lineplot(x=x, y=y, marker='o', color='r')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Simple Line Plot with Seaborn')
+plt.show()
+
+"""Creating a simple bar plot with Seaborn"""
+
+# Data for bar plot with Seaborn
+categories = ['A', 'B', 'C', 'D']
+values = [4, 7, 1, 8]
+
+# Creating a bar plot with Seaborn
+sns.barplot(x=categories, y=values, palette='pastel')
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.title('Simple Bar Plot with Seaborn')
+plt.show()
+
+"""Creating a pair plot with Seaborn"""
+
+# Loading iris dataset
+iris_data = sns.load_dataset("iris")
+
+# Creating a pair plot with Seaborn
+sns.pairplot(iris_data, hue='species', palette='husl')
+plt.title('Pair Plot with Seaborn')
+plt.show()
+
+"""Create a simple heatmap with Seaborn"""
+
+# Data for heatmap
+data = np.random.rand(10, 12)
+sns.heatmap(data, annot=True, cmap='viridis')
+plt.title('Heatmap with Seaborn')
+plt.show()
