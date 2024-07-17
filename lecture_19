@@ -1,0 +1,65 @@
+
+
+!pip install plotly
+
+import pandas as pd
+
+# Load the dataset
+df = pd.read_csv('/content/Sales.csv')
+print(df.head())
+
+"""Creating a line plot"""
+
+import plotly.express as px
+
+# Create a line plot
+fig = px.line(df, x='Memory', y='Storage', title='Sales of Mobiles', markers=True, line_shape='spline')
+fig.update_traces(line=dict(dash='dash'))
+fig.show()
+
+"""Creating a bar plot"""
+
+# Create a bar plot
+fig = px.bar(df, x='Memory', y='Storage', title='Sales of Mobiles', color='Camera', barmode='group')
+fig.show()
+
+"""Creating a scatter plot"""
+
+# Create a scatter plot
+fig = px.scatter(df, x='Brands', y='Storage', title='Sales of Mobiles', color='Memory', size='Selling Price', hover_data=['Models'])
+fig.show()
+
+"""Creating a histogram"""
+
+# Create a histogram
+fig = px.histogram(df, x='Brands', y='Selling Price', title='Sales of Mobile Phones', nbins=20, color='Brands')
+fig.show()
+
+"""Creating a pie chart"""
+
+# Create a pie chart
+fig = px.pie(df, values='Selling Price', names='Brands', title='Sales of Mobile Phones', hole=0.3)
+fig.show()
+
+"""Creating an interactive line chart"""
+
+# Create an interactive line chart
+fig = px.line(df, x='Brands', y='Storage', title='Sales of Mobile Phones', markers=True, color='Memory', hover_data=['Storage'])
+fig.update_layout(hovermode='x unified')
+fig.show()
+
+"""Creating a geographical map"""
+
+# Sample data
+data = {
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'],
+    'State': ['NY', 'CA', 'IL', 'TX', 'AZ'],
+    'Population': [8419000, 3980400, 2716000, 2328000, 1690000]
+}
+
+# Creating the DataFrame
+df = pd.DataFrame(data)
+
+# Create a geographical map
+fig = px.choropleth(df, locations='State', locationmode='USA-states', color='Population', scope='usa', title='Population by State', color_continuous_scale='Viridis')
+fig.show()
