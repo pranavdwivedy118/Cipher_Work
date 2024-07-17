@@ -1,0 +1,22 @@
+
+
+How to Write a Formula in Excel
+
+1. Select the cell where you want to enter the formula.
+2. Type an equals sign (=) to indicate that you are starting a formula.
+3. For example, to create a multiplication formula for the four times table:
+- In cell E3, type: `=A3*C3`
+- Press Enter.
+4. Select cell E3, then drag the fill handle (small square at the bottom right corner) down to E12.
+5. The formula will be copied to all the selected cells.
+
+Functions Covered:
+- SUM: Adds all the numbers in a range of cells.
+- AVERAGE: Calculates the average of a group of numbers.
+- MAX: Finds the highest number in a range of cells.
+- MIN: Finds the lowest number in a range of cells.
+- XLOOKUP: Searches a range or an array, and returns an item corresponding to the first match it finds.
+- SUMPRODUCT: Multiplies corresponding components in the given arrays, and returns the sum of those products.
+- OFFSET: Returns a reference to a range that is a specified number of rows and columns from a cell or range of cells.
+- QUERY: Not a standard Excel function, often refers to using Power Query for data manipulation.
+
