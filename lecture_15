@@ -1,0 +1,71 @@
+Lecture 15 - Data Manipulation and Analysis with NumPy
+!pip install numpy
+
+import numpy as np
+
+# Creating a 1D array from a list
+arr1 = np.array([1, 2, 3, 4, 5])
+print("1D array:", arr1)
+
+# Creating a 2D array from a list of lists
+arr2 = np.array([[1, 2, 3], [4, 5, 6]])
+print("2D array:\n", arr2)
+
+# Creating Arrays with Functions
+zeros = np.zeros((3, 4))
+print("Array of zeros:\n", zeros)
+
+ones = np.ones((2, 3))
+print("Array of ones:\n", ones)
+
+# Creating an array with a range of values
+range_arr = np.arange(10, 20, 2)
+print("Array with range of values:", range_arr)
+
+# Creating an array with random values
+random_arr = np.random.rand(3, 3)
+print("Random array:\n", random_arr)
+
+# Basic Array Operations - Element-Wise Operations
+arr = np.array([1, 2, 3, 4, 5])
+print("Original array:", arr)
+print("Add 2:", arr + 2)
+print("Multiply by 2:", arr * 2)
+print("Subtract 1:", arr - 1)
+print("Divide by 2:", arr / 2)
+
+print("Square root:", np.sqrt(arr))
+print("Exponential:", np.exp(arr))
+print("Natural log:", np.log(arr))
+print("Sine:", np.sin(arr))
+
+# Indexing and Slicing - Slicing
+print("Array slice [1:4]:", arr[1:4])
+print("Array slice [:3]:", arr[:3])
+print("Array slice [2:]:", arr[2:])
+
+# Indexing and Slicing - Advanced Indexing
+print("Boolean indexing (elements > 3):", arr[arr > 3])
+
+# Fancy indexing
+indices = [0, 2, 4]
+print("Fancy indexing:", arr[indices])
+
+# Reshaping and Transposing - Reshaping Arrays
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+print("Original 2D array:\n", arr)
+
+reshaped = arr.reshape((3, 2))
+print("Reshaped array:\n", reshaped)
+
+# Reshaping and Transposing - Transposing Arrays
+transposed = arr.T
+print("Transposed array:\n", transposed)
+
+# Aggregation Functions - Sum and Mean
+print("Sum of all elements:", np.sum(arr))
+print("Sum along columns:", np.sum(arr, axis=0))
+print("Sum along rows:", np.sum(arr, axis=1))
+print("Mean of all elements:", np.mean(arr))
+print("Index of minimum value:", np.argmin(arr))
+print("Index of maximum value:", np.argmax(arr))
