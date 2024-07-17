@@ -1,0 +1,44 @@
+
+
+ Date and Time Functions in Excel
+
+Excel stores dates and times as serial numbers, but you can use various functions to work with them in a user-friendly way. Here are some commonly used functions:
+
+1. DATE:
+
+Purpose: Constructs a date from separate year, month, and day values. 
+Syntax: `=DATE(year, month, day)`
+Example: `=DATE(2024, 7, 17)` returns today's date (assuming you're entering the formula today, July 17, 2024).
+
+2. DAY:
+
+Purpose: Extracts the day of the month from a date.
+Syntax: `=DAY(cell_name)`
+Example: If cell A1 contains the date `=DATE(2024, 7, 17)`, then `=DAY(A1)` returns `17`.
+
+3. EDATE:
+
+Purpose: Adds or subtracts a specified number of months from a starting date.
+Syntax: `=EDATE(start_date, months)`
+Example: `=EDATE(TODAY(), 3)` returns the date three months from today.
+
+4. WEEKDAY:
+
+Purpose: Returns the day of the week (represented as a number) for a given date.
+Syntax: `=WEEKDAY(cell_name)`
+     By default, Sunday = 1 and Saturday = 7. You can adjust this behavior using a second optional argument.
+Example: `=WEEKDAY(A1)` (where A1 contains a date) might return `3` (Wednesday).
+
+5. HOUR:
+
+Purpose: Extracts the hour value from a time.
+Syntax: `=HOUR(cell_name)`
+Example: If a cell contains `=TIME(15, 30, 0)`, then `=HOUR(cell_name)` returns `15`.
+
+6. MINUTE:
+
+Purpose: Extracts the minute value from a time.
+Syntax: `=MINUTE(cell_name)`
+Example: Using the same cell from the HOUR example, `=MINUTE(cell_name)` returns `30`.
+
+
